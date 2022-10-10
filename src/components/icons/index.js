@@ -1,0 +1,1 @@
+export {default as iconComp} from './icon-comp.vue'
