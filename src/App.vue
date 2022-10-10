@@ -1,17 +1,27 @@
 <template>
   <div>
-    <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-    <NavBar msg="this is NavBar"></NavBar>
+    <nav-bar msg="this is NavBar">
+      <template #headline>
+        <icon-comp />
+        <h1>Head Line</h1>
+      </template>
+
+      <template #content>
+        <p>content</p>
+      </template>
+    </nav-bar>
   </div>
 </template>
 
 <script>
-import NavBar from "./components/NavBar/NavBar.vue";
+import NavBar from "./components/NavBar/nav-bar.vue";
+import iconComp from "./components/icons/icon-comp.vue";
 
 export default {
   name: "App",
   components: {
     NavBar,
+    iconComp,
   },
 };
 </script>
